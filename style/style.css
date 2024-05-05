@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Body styles */
+body {
+background-image: url(https://i.pinimg.com/736x/2a/1c/bb/2a1cbbe226f2a0fc5af8ad4364113fa3.jpg); 
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+margin: 0;
+color: #fff;
+}
+
+/* Header styles */
+header {
+background-color: rgba(102, 164, 225, 0.8);; /* Adjusted background color with transparency */
+color: #fff;
+padding: 10px 0;
+text-align: center;
+}
+
+.navbar-brand {
+font-size: 1.5rem;
+}
+
+/* Main container styles */
+.container {
+margin-top: 20px;
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+/* Input and output styles */
+.form-label {
+font-weight: bold;
+}
+
+textarea {
+resize: none;
+height: calc(100% - 160px); /* Adjusted height to fill remaining space */
+margin-bottom: 20px; /* Adjusted margin to create space between textarea and buttons */
+}
+
+#output {
+list-style-type: none;
+padding: 0;
+}
+
+/* Footer styles */
+.footer {
+background-color: rgba(102, 164, 225, 0.8); /* Adjusted background color with transparency */
+color: #fff;
+padding: 10px 0;
+text-align: center;
+position: sticky;
+bottom: 0;
+width: 100%;
+}
+
+/* Button styles */
+.btn {
+background-color: rgba(0, 123, 255, 0.8);
+color:#fff;
+margin-top: 10px;
+border-radius: 20px;
+}
+#clearBtn{
+    background-color: red;
+}
+
+/* Animations */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+from { transform: translateX(-100%); }
+to { transform: translateX(0); }
+}
+
+.list-group-item {
+animation: slideInFromLeft 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
+}
